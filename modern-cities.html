@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Burundi's two capitals. Bujumbura, the economic hub on Lake Tanganyika, and Gitega, the political capital and royal heartland.">
+    <meta name="keywords"
+        content="Bujumbura, Gitega, Burundi cities, Burundi capital, Lake Tanganyika city, urban Burundi, East African cities">
+    <title>A Tale of Two Cities - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Lake-Tanganyika-2-400x300.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .detail-container {
+            max-width: 900px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+        }
+
+        .detail-content h2 {
+            color: var(--color-text-primary);
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            font-size: 2rem;
+        }
+
+        .detail-footer {
+            text-align: center;
+            margin-top: var(--spacing-3xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--color-border);
+        }
+
+        @media (max-width: 768px) {
+            .detail-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#history" class="nav-link">History</a></li>
+                <li><a href="index.html#culture-section" class="nav-link">Culture</a></li>
+                <li><a href="index.html#nature" class="nav-link">Nature</a></li>
+                <li><a href="index.html#modern" class="nav-link">Modern</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>A Tale of Two Cities</h1>
+            <p class="hero-subtitle">Bujumbura and Gitega: The dual hearts of a modernizing nation.</p>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <a href="index.html" class="back-link">← Back to Overview</a>
+
+        <article class="detail-content">
+            <p>Today, Burundi is defined by a unique urban balance. Since 2019, the nation has officially operated with
+                two capitals: <strong>Bujumbura</strong> as the economic powerhouse and <strong>Gitega</strong> as the
+                restored political capital. This move symbolizes a bridge between the country's colonial urban past and
+                its deep historical roots.</p>
+
+            <h2>Bujumbura: The Vibrant Gateway</h2>
+            <p>Stretching along the northeastern shores of Lake Tanganyika, Bujumbura is the nation's largest city and
+                its primary gateway to the world. It is a city of movement, where the palm-fringed beaches meet a
+                growing skyline. In the evening, the city's cafes and restaurants hum with life, offering a mix of
+                cosmopolitan energy and the relaxed atmosphere of the Great Lakes.</p>
+
+            <h2>Gitega: The Royal Heartland Restored</h2>
+            <p>Located in the geographical center of the country, Gitega was once the seat of the monarchy. Its
+                restoration as the political capital has brought a new wave of modernization to the interior. Gitega is
+                where tradition meets the future, housing the National Museum and being the epicenter of the nation's
+                judicial and administrative life.</p>
+
+            <h2>Modern Urban Life</h2>
+            <p>Urban development in both cities is focused on sustainability and connectivity. New infrastructure, from
+                improved road networks to public green spaces, is transforming the daily experience for Burundians. The
+                cities are becoming hubs for creative arts, fashion, and social innovation, reflecting the aspirations
+                of a young and energetic population.</p>
+
+            <h2>Harmony in Diversity</h2>
+            <p>While Bujumbura remains the lively hub for commerce and international relations, Gitega provides a serene
+                and historically significant center for governance. Together, they represent the dual identity of modern
+                Burundi: a nation that honors its heritage while building a dynamic, decentralized future.</p>
+        </article>
+
+        <div class="detail-footer">
+            <a href="index.html" class="hero-cta">Explore More of Burundi</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

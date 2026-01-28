@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Celebrate the achievements of Burundian youth. From Dynamo BBC in the BAL to Francine Niyonsaba on the track, see how Burundi excels in sports and arts.">
+    <meta name="keywords"
+        content="Burundi sports, Dynamo BBC, Francine Niyonsaba, Intamba m'Rugamba, Burundi youth, African basketball, Burundi athletics">
+    <title>Youth & Sports Excellence - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/sport excellence.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .detail-container {
+            max-width: 900px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+        }
+
+        .detail-content h2 {
+            color: var(--color-text-primary);
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            font-size: 2rem;
+        }
+
+        .detail-footer {
+            text-align: center;
+            margin-top: var(--spacing-3xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--color-border);
+        }
+
+        @media (max-width: 768px) {
+            .detail-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#history" class="nav-link">History</a></li>
+                <li><a href="index.html#culture-section" class="nav-link">Culture</a></li>
+                <li><a href="index.html#nature" class="nav-link">Nature</a></li>
+                <li><a href="index.html#modern" class="nav-link">Modern</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>Youth & Sports Excellence</h1>
+            <p class="hero-subtitle">Celebrating the energy, talent, and competitive spirit of Burundian youth.</p>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <a href="index.html" class="back-link">← Back to Overview</a>
+
+        <article class="detail-content">
+            <p>With one of the youngest populations in Africa, Burundi's future is being shaped by the energy and talent
+                of its youth. This dynamism is most visible in the fields of sports and arts, where Burundians are
+                increasingly making their mark on the international stage.</p>
+
+            <h2>Basketball Explosion: Dynamo BBC</h2>
+            <p>Basketball has recently captured the nation's imagination. Leading this charge is <strong>Dynamo
+                    BBC</strong>, which made history by becoming the first Burundian team to qualify for the Basketball
+                Africa League (BAL). This achievement has inspired thousands of young Burundians to pick up a ball,
+                leading to the construction of new courts and a vibrant street-ball culture.</p>
+
+            <h2>Football Passion: The Intamba</h2>
+            <p>Football remains the most popular sport, a unifying force that brings the nation together. The national
+                team, <strong>Intamba m'Rugamba</strong> (The Swallows), has seen a resurgence in talent, with many
+                players competing in major African and European leagues. Their historic participation in the 2019 Africa
+                Cup of Nations remains a point of immense national pride.</p>
+
+            <h2>A Creative Renaissance</h2>
+            <p>The creative pulse of Burundi is stronger than ever. A new generation of musicians, visual artists, and
+                filmmakers is blending traditional rhythms and themes with modern styles. From the vibrant Afro-pop
+                scene in Bujumbura to international art exhibitions, Burundian youth are telling their stories in bold,
+                innovative ways.</p>
+
+            <h2>Athletics: Global Runners</h2>
+            <p>In the world of athletics, Burundians continue to excel in long-distance running. Athletes like
+                <strong>Francine Niyonsaba</strong> have won Olympic and World Championship medals, proving that with
+                determination and discipline, Burundian talent knows no bounds. These role models are inspiring a new
+                wave of track and field athletes across the country's "Thousand Hills."
+            </p>
+        </article>
+
+        <div class="detail-footer">
+            <a href="index.html" class="hero-cta">Explore More of Burundi</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

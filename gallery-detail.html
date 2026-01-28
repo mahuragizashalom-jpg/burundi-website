@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View detailed photographs and stories from Burundi. Explore the rich cultural heritage and stunning landscapes of the Heart of Africa.">
+    <meta name="keywords"
+        content="Burundi photos, Burundian photography, African gallery, Burundi culture images, landscape photography">
+    <title>Photo Detail - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+            position: relative;
+        }
+
+        .detail-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .detail-container {
+            max-width: 900px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .detail-content {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+        }
+
+        .detail-content h2 {
+            color: var(--color-text-primary);
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+        }
+
+        .detail-footer {
+            text-align: center;
+            margin-top: var(--spacing-3xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--color-border);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <header class="detail-hero" id="detailHero">
+        <div class="hero-content">
+            <h1 id="detailTitle">Loading...</h1>
+            <p class="hero-subtitle" id="detailSubtitle"></p>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <a href="index.html#gallery" class="back-link">← Back to Gallery</a>
+
+        <article class="detail-content" id="detailContent">
+            <!-- Content will be injected here -->
+        </article>
+
+        <div class="detail-footer">
+            <a href="index.html" class="hero-cta">Explore More of Burundi</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const params = new URLSearchParams(window.location.search);
+            const title = params.get('title');
+            const urlDesc = params.get('desc');
+            const imgSrc = params.get('img');
+            const category = params.get('category');
+
+            if (title) {
+                document.getElementById('detailTitle').textContent = title;
+                document.title = `${title} - Discover Burundi`;
+
+                try {
+                    const response = await fetch('/api/gallery');
+                    const galleryData = await response.json();
+
+                    if (galleryData && galleryData[title]) {
+                        document.getElementById('detailContent').innerHTML = galleryData[title];
+                    } else if (urlDesc) {
+                        document.getElementById('detailContent').innerHTML = `<p>${urlDesc}</p>`;
+                    } else {
+                        document.getElementById('detailContent').innerHTML = `<p>Experience the beauty of Burundi.</p>`;
+                    }
+                } catch (error) {
+                    console.error('Error fetching gallery data:', error);
+                    if (urlDesc) {
+                        document.getElementById('detailContent').innerHTML = `<p>${urlDesc}</p>`;
+                    }
+                }
+            }
+
+            if (category) {
+                document.getElementById('detailSubtitle').textContent = category.charAt(0).toUpperCase() + category.slice(1);
+            }
+
+            if (imgSrc) {
+                document.getElementById('detailHero').style.backgroundImage = `url('${imgSrc}')`;
+            }
+        });
+    </script>
+</body>
+
+</html>

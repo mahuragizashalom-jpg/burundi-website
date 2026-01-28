@@ -1,0 +1,606 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the beauty of Burundi through stunning photography showcasing its people, landscapes, culture, and daily life. Celebrate Burundian identity and heritage.">
+    <meta name="keywords" content="Burundi, Africa, photography, culture, landscape, people, heritage, East Africa">
+    <meta name="author" content="Burundi Showcase">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://burundi-showcase.netlify.app/">
+    <meta property="og:title" content="Discover Burundi - Beauty, Culture & Heritage">
+    <meta property="og:description"
+        content="Discover the beauty of Burundi through stunning photography showcasing its people, landscapes, culture, and daily life.">
+    <meta property="og:image" content="images/hillside-vista.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://burundi-showcase.netlify.app/">
+    <meta property="twitter:title" content="Discover Burundi - Beauty, Culture & Heritage">
+    <meta property="twitter:description"
+        content="Discover the beauty of Burundi through stunning photography showcasing its people, landscapes, culture, and daily life.">
+    <meta property="twitter:image" content="images/hillside-vista.jpg">
+    <title>Discover Burundi - Beauty, Culture & Heritage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo"
+                    class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="culture.html" class="nav-link">Culture</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="modern.html" class="nav-link">Modern</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay loop playsinline class="hero-video" id="heroVideo">
+            <source src="images/Video%20Project.mp4" type="video/mp4">
+        </video>
+        <button class="volume-toggle" id="volumeToggle" aria-label="Toggle Volume">
+            <span class="volume-icon">🔇</span>
+        </button>
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the Heart of Africa</h1>
+            <p class="hero-subtitle">
+                Experience the breathtaking beauty of Burundi through captivating photography
+                that celebrates its people, landscapes, culture, and vibrant daily life.
+            </p>
+            <a href="#gallery" class="hero-cta">
+                Explore Gallery
+                <span>↓</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section class="section fun-facts"
+        style="margin-top: -100px; padding-top: 2rem; position: relative; z-index: 50; background: transparent; box-shadow: none;">
+        <div class="container-narrow">
+            <div class="facts-container reveal" style="margin-top: 0;">
+                <div class="fact-item clickable-card" data-title="Two Capitals" data-category="Quick Facts"
+                    data-img="images/Bujumbura-City-JimJam-Safaris-400x300.png">
+                    <span class="fact-icon">📍</span>
+                    <p><strong>Two Capitals:</strong> Bujumbura (Economic) & Gitega (Political).</p>
+                </div>
+                <div class="fact-item clickable-card" data-title="Heart of Africa" data-category="Quick Facts"
+                    data-img="images/village-smiles.jpg">
+                    <span class="fact-icon">♥</span>
+                    <p><strong>Heart of Africa:</strong> Shaped like a heart, situated in the continent's center.</p>
+                </div>
+                <div class="fact-item clickable-card" data-title="Thousand Hills" data-category="Quick Facts"
+                    data-img="images/hillside-vista.jpg">
+                    <span class="fact-icon">⛰</span>
+                    <p><strong>Thousand Hills:</strong> Defined by endless rolling verdant landscapes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery" style="margin-top: 0; padding-top: 4rem;">
+        <div class="section-header reveal">
+            <h2 class="section-title">Photo Gallery</h2>
+            <p class="section-description">
+                Immerse yourself in the beauty of Burundi. Browse through our curated collection
+                of photographs showcasing the essence of this remarkable nation.
+            </p>
+        </div>
+
+        <!-- Gallery Filters -->
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All Photos</button>
+            <button class="filter-btn" data-filter="people">People</button>
+            <button class="filter-btn" data-filter="landscapes">Landscapes</button>
+            <button class="filter-btn" data-filter="culture">Culture</button>
+            <button class="filter-btn" data-filter="daily-life">Daily Life</button>
+            <button class="filter-btn" data-filter="schools">Schools</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- PEOPLE CATEGORY -->
+            <div class="gallery-item" data-category="people">
+                <img src="images/village-smiles.jpg" alt="Burundian portrait" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Village Smiles</h3>
+                    <p class="gallery-description">Celebrating the vibrant spirit and rich heritage of the Burundian
+                        people.</p>
+                    <span class="gallery-category">People</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="images/youth-spirit.jpg" alt="Young Burundian portrait" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Youth Spirit</h3>
+                    <p class="gallery-description">The future of Burundi is bright, driven by the energy and creativity
+                        of its youth.</p>
+                    <span class="gallery-category">People</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="people">
+                <img src="images/community-gathering.jpg" alt="Burundian community gathering" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Community Gathering</h3>
+                    <p class="gallery-description">Strong community bonds form the foundation of our social fabric and
+                        progress.</p>
+                    <span class="gallery-category">People</span>
+                </div>
+            </div>
+
+            <!-- LANDSCAPES CATEGORY -->
+            <div class="gallery-item" data-category="landscapes">
+                <img src="images/landscape-hills.png" alt="Burundian hills" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Landscape Hills</h3>
+                    <p class="gallery-description">Experience the raw power and serene beauty of Burundi's natural
+                        wonders.</p>
+                    <span class="gallery-category">Landscapes</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscapes">
+                <img src="images/Lake-Tanganyika-2-400x300.jpg" alt="Lake Tanganyika" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Lake Tanganyika</h3>
+                    <p class="gallery-description">The shores of one of the world's deepest lakes offer breathtaking
+                        vistas and tranquility.</p>
+                    <span class="gallery-category">Landscapes</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="landscapes">
+                <img src="images/hillside-vista.jpg" alt="Hillside vista" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Hillside Vista</h3>
+                    <p class="gallery-description">Rolling verdant hills that define the unique "Thousand Hills"
+                        landscape of Burundi.</p>
+                    <span class="gallery-category">Landscapes</span>
+                </div>
+            </div>
+
+            <!-- CULTURE CATEGORY -->
+            <div class="gallery-item" data-category="culture">
+                <img src="images/drummers-culture.png" alt="Traditional drums" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Drummers Culture</h3>
+                    <p class="gallery-description">The heartbeat of the nation, where the sacred art of drumming comes
+                        alive.</p>
+                    <span class="gallery-category">Culture</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culture">
+                <img src="images/Gishora-Drum-Sanctuary-400x300.jpg" alt="Gishora Drum Sanctuary" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Gishora Drum Sanctuary</h3>
+                    <p class="gallery-description">The heartbeat of the nation, where the sacred art of drumming comes
+                        alive.</p>
+                    <span class="gallery-category">Culture</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="culture">
+                <img src="images/pottery-art.jpg" alt="Traditional pottery" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Pottery Art</h3>
+                    <p class="gallery-description">Preserving ancient techniques through the dedicated hands of our
+                        artisans.</p>
+                    <span class="gallery-category">Culture</span>
+                </div>
+            </div>
+
+            <!-- DAILY LIFE CATEGORY -->
+            <div class="gallery-item" data-category="daily-life">
+                <img src="images/tradition food.jpg" alt="Traditional food" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Tradition Food</h3>
+                    <p class="gallery-description">The aroma of freshly harvested coffee beans, our nation's liquid
+                        gold.</p>
+                    <span class="gallery-category">Daily Life</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="daily-life">
+                <img src="images/bustling-market.jpg" alt="Bustling market" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Bustling Market</h3>
+                    <p class="gallery-description">The dynamic energy of Bujumbura, where modernity meets traditional
+                        charm.</p>
+                    <span class="gallery-category">Daily Life</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="daily-life">
+                <img src="images/hotel.jpg" alt="Hotel" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Hotel</h3>
+                    <p class="gallery-description">World-class accommodation welcoming visitors to Bujumbura.</p>
+                    <span class="gallery-category">Daily Life</span>
+                </div>
+            </div>
+
+            <!-- SCHOOLS CATEGORY -->
+            <div class="gallery-item" data-category="schools">
+                <img src="images/school-campus.jpg" alt="School campus" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">School Campus</h3>
+                    <p class="gallery-description">Building the future through education and knowledge.</p>
+                    <span class="gallery-category">Schools</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="schools">
+                <img src="images/learning-together.jpg" alt="Students learning" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Learning Together</h3>
+                    <p class="gallery-description">Empowering the next generation through quality education.</p>
+                    <span class="gallery-category">Schools</span>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="schools">
+                <img src="images/future-bright.jpg" alt="Future bright" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Future Bright</h3>
+                    <p class="gallery-description">Young minds shaping tomorrow's Burundi.</p>
+                    <span class="gallery-category">Schools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Break 1: People & Tradition -->
+    <div class="visual-break">
+        <img src="images/village-smiles.jpg" alt="Burundian smile">
+        <img src="images/pottery-art.jpg" alt="Pottery art">
+        <img src="images/community-gathering.jpg" alt="Community gathering">
+        <img src="images/tradition food.jpg" alt="Traditional food">
+    </div>
+
+    <!-- History & Heritage Section -->
+    <section class="section" id="history">
+        <div class="section-header reveal">
+            <h2 class="section-title">History & Heritage</h2>
+            <p class="section-description">
+                A journey through time, from an ancient monarchy to a vibrant republic.
+            </p>
+        </div>
+        <div class="feature-container">
+            <!-- The Royal Kingdom -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="monarchy.html" class="feature-image-link">
+                        <img src="images/drummers-culture.png" alt="Burundian Royal Heritage" class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="monarchy.html" class="info-card-link">
+                        <h3>The Royal Kingdom</h3>
+                        <p>Before colonial times, Burundi was a powerful monarchy founded in the 15th century. Led by
+                            kings
+                            known as the <strong>Mwami</strong>, the nation successfully resisted invasions for
+                            centuries,
+                            maintaining a strong, organized state with a rich oral tradition.</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- The Path to Independence -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="independence.html" class="feature-image-link">
+                        <img src="images/Prince Louis Rwagasore.webp" alt="Prince Louis Rwagasore"
+                            class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="independence.html" class="info-card-link">
+                        <h3>The Path to Independence</h3>
+                        <p>On July 1, 1962, Burundi gained independence. The struggle was led by national hero
+                            <strong>Prince Louis Rwagasore</strong>, whose vision of unity and progress continues to
+                            inspire
+                            the nation. His legacy is honored at the Independence Monument in Gitega.
+                        </p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Historic Explorations -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="explorations.html" class="feature-image-link">
+                        <img src="images/Lake-Tanganyika-2-400x300.jpg" alt="Explorers Meeting Point"
+                            class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="explorations.html" class="info-card-link">
+                        <h3>Historic Explorations</h3>
+                        <p>Burundi holds a place in world exploration history. The <strong>Livingstone-Stanley
+                                Monument</strong> south of Bujumbura marks where legendary explorers David Livingstone
+                            and
+                            Henry Morton Stanley met in 1871 during their search for the source of the Nile.</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Heartland Section -->
+    <section class="section secondary-bg" id="culture-section">
+        <div class="section-header reveal">
+            <h2 class="section-title">Cultural Heartland</h2>
+            <p class="section-description">
+                Experience the rhythmic pulse and vibrant traditions of the Burundian spirit.
+            </p>
+        </div>
+        <div class="feature-container">
+            <!-- The Sacred Royal Drummers -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="drummers.html" class="feature-image-link">
+                        <img src="images/Gishora-Drum-Sanctuary-400x300.jpg" alt="Traditional Burundian Drumming"
+                            class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="drummers.html" class="info-text-link">
+                        <h3>The Sacred Royal Drummers</h3>
+                        <p>The <strong>Royal Drummers of Burundi</strong> are a world-renowned cultural icon. Their
+                            powerful,
+                            rhythmic performances with hand-carved <em>Ingoma</em> drums were once reserved for royal
+                            rituals.
+                            In 2014, this ritual dance was inscribed on the UNESCO Intangible Cultural Heritage list.
+                        </p>
+                        <p>Visit the <strong>Gishora Drum Sanctuary</strong> to witness the athleticism and spiritual
+                            energy of
+                            this ancient art form, passed down through generations of drummers.</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Vibrant Traditions -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="traditions.html" class="feature-image-link">
+                        <img src="images/drummers-culture.png" alt="Traditional Urunaani Dance Performance"
+                            class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="traditions.html" class="info-text-link">
+                        <h3>Vibrant Traditions</h3>
+                        <p>Burundian culture is a tapestry of music, dance, and community. From the intricate art of
+                            <strong>basket weaving</strong> and pottery to the energetic <strong>Urunaani</strong>
+                            traditional dances that celebrate harvest and life milestones, the heritage is deeply rooted
+                            in unity and respect.
+                        </p>
+                        <p>Kirundi, the common language, unites the Hutu, Tutsi, and Twa people, fostering a shared
+                            identity that is celebrated in festivals across the "Thousand Hills."</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Break 2: Culture Transitions -->
+    <div class="visual-break">
+        <img src="images/drummers-culture.png" alt="Drummers">
+        <img src="images/Gishora-Drum-Sanctuary-400x300.jpg" alt="Drum Sanctuary">
+        <img src="images/pottery-art.jpg" alt="Pottery">
+        <img src="images/our tradition.jpg" alt="Traditions">
+    </div>
+
+    <!-- Natural Wonders Section -->
+    <section class="section" id="nature">
+        <div class="section-header reveal">
+            <h2 class="section-title">Natural Wonders</h2>
+            <p class="section-description">
+                From pristine lakes to emerald forests, Burundi's landscapes are a paradise for nature lovers.
+            </p>
+        </div>
+        <div class="feature-container">
+            <!-- Lake Tanganyika -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="tanganyika.html" class="feature-image-link">
+                        <img src="images/Lake-Tanganyika-2-400x300.jpg" alt="Lake Tanganyika Sunset"
+                            class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="tanganyika.html" class="info-card-link">
+                        <h3>Lake Tanganyika</h3>
+                        <p>Burundi borders the world's longest freshwater lake. Lake Tanganyika is a biodiversity
+                            hotspot,
+                            home to over 1,300 species of fish and ancient legends like <strong>Gustave the
+                                Crocodile</strong>. Its crystal-clear waters and sandy beaches offer ultimate
+                            relaxation.</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Emerald National Parks -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="parks.html" class="feature-image-link">
+                        <img src="images/Kibira-Forest-National-Park-1-400x300.jpg" alt="Kibira Forest National Park"
+                            class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="parks.html" class="info-card-link">
+                        <h3>Emerald National Parks</h3>
+                        <p>Explore the "proper tropical forest" of <strong>Kibira National Park</strong>, a haven for
+                            wild
+                            chimpanzees, or visit <strong>Ruvubu National Park</strong>, the country's largest, where
+                            hippos
+                            and buffalo roam the grasslands along the Ruvubu River.</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Source of the Nile -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <a href="nile-source.html" class="feature-image-link">
+                        <img src="images/source du nil.jpg" alt="Source of the Nile" class="feature-image">
+                    </a>
+                </div>
+                <div class="feature-content">
+                    <a href="nile-source.html" class="info-card-link">
+                        <h3>Source of the Nile</h3>
+                        <p>Visit the southernmost source of the legendary Nile River in Rutovu. This sacred site marks
+                            the
+                            beginning of the world's longest river journey, flowing over 6,600 kilometers to the
+                            Mediterranean
+                            Sea.</p>
+                        <span class="read-more">Read More →</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Break 3: Nature Transitions -->
+    <div class="visual-break">
+        <img src="images/hillside-vista.jpg" alt="Hillside vista">
+        <img src="images/source du nil.jpg" alt="Source of the Nile">
+        <img src="images/hidden-valley.jpg" alt="Hidden Valley">
+        <img src="images/Lake-Tanganyika-2-400x300.jpg" alt="Lake Tanganyika">
+    </div>
+
+    <!-- More Information Section -->
+    <section class="section secondary-bg" id="more-info">
+        <div class="section-header reveal">
+            <h2 class="section-title">Explore More</h2>
+            <p class="section-description">
+                Dive deeper into the rich tapestry of Burundi's history, culture, and natural beauty.
+            </p>
+        </div>
+
+        <div class="feature-container">
+            <div class="info-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem;">
+                <!-- History Pages -->
+                <a href="monarchy.html" class="info-link-card">
+                    <div class="info-card-icon">👑</div>
+                    <h3>The Royal Monarchy</h3>
+                    <p>Discover the ancient Ganwa kingdom</p>
+                </a>
+
+                <a href="independence.html" class="info-link-card">
+                    <div class="info-card-icon">🇧🇮</div>
+                    <h3>Independence Journey</h3>
+                    <p>Prince Louis Rwagasore's legacy</p>
+                </a>
+
+                <a href="explorations.html" class="info-link-card">
+                    <div class="info-card-icon">🗺️</div>
+                    <h3>Historic Explorations</h3>
+                    <p>Livingstone & Stanley's meeting</p>
+                </a>
+
+                <!-- Culture Pages -->
+                <a href="drummers.html" class="info-link-card">
+                    <div class="info-card-icon">🥁</div>
+                    <h3>Sacred Drummers</h3>
+                    <p>UNESCO heritage drumming tradition</p>
+                </a>
+
+                <a href="traditions.html" class="info-link-card">
+                    <div class="info-card-icon">💃</div>
+                    <h3>Vibrant Traditions</h3>
+                    <p>Dance, music, and community</p>
+                </a>
+
+                <!-- Nature Pages -->
+                <a href="tanganyika.html" class="info-link-card">
+                    <div class="info-card-icon">🌊</div>
+                    <h3>Lake Tanganyika</h3>
+                    <p>World's longest freshwater lake</p>
+                </a>
+
+                <a href="parks.html" class="info-link-card">
+                    <div class="info-card-icon">🌳</div>
+                    <h3>National Parks</h3>
+                    <p>Kibira & Ruvubu wilderness</p>
+                </a>
+
+                <a href="nile-source.html" class="info-link-card">
+                    <div class="info-card-icon">💧</div>
+                    <h3>Source of the Nile</h3>
+                    <p>The legendary river's birthplace</p>
+                </a>
+
+                <!-- Modern Pages -->
+                <a href="modern-cities.html" class="info-link-card">
+                    <div class="info-card-icon">🏙️</div>
+                    <h3>Modern Cities</h3>
+                    <p>Bujumbura & Gitega today</p>
+                </a>
+
+                <a href="digital-leap.html" class="info-link-card">
+                    <div class="info-card-icon">💻</div>
+                    <h3>Digital Transformation</h3>
+                    <p>Technology & innovation</p>
+                </a>
+
+                <a href="youth-sports.html" class="info-link-card">
+                    <div class="info-card-icon">⚽</div>
+                    <h3>Youth & Sports</h3>
+                    <p>Empowering the next generation</p>
+                </a>
+
+                <!-- Account -->
+                <a href="account.html" class="info-link-card">
+                    <div class="info-card-icon">👤</div>
+                    <h3>Your Account</h3>
+                    <p>Manage your profile</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

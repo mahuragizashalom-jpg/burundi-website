@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Experience the natural wonders of Burundi. From the shores of Lake Tanganyika to the Kibira Forest and the southernmost Source of the Nile, discover a paradise of biodiversity.">
+    <meta name="keywords"
+        content="Burundi nature, Lake Tanganyika, Kibira National Park, Source of the Nile, Burundi tourism, landscapes, Ruvubu National Park">
+    <title>Natural Wonders - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/source du nil.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .category-container {
+            max-width: 1200px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .category-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .category-intro h2 {
+            font-size: 2.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .feature-grid {
+            display: grid;
+            gap: var(--spacing-2xl);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .category-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="culture.html" class="nav-link">Culture</a></li>
+                <li><a href="nature.html" class="nav-link active">Nature</a></li>
+                <li><a href="modern.html" class="nav-link">Modern</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>Natural Wonders</h1>
+            <p class="hero-subtitle">Discover the raw beauty and biodiversity of the "Switzerland of Africa."</p>
+        </div>
+    </header>
+
+    <main class="category-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="category-intro">
+            <h2>Pristine Beauty Unleashed</h2>
+            <p>From the depths of Lake Tanganyika to the peaks of Mount Heha, Burundi offers landscapes that are as
+                diverse as they are breathtaking. Immerse yourself in the green heart of the continent.</p>
+        </div>
+
+        <div class="feature-grid">
+            <!-- Lake Tanganyika -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Lake-Tanganyika-2-400x300.jpg" alt="Lake Tanganyika Sunset" class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>Lake Tanganyika</h3>
+                    <p>Burundi borders the world's longest freshwater lake. A biological treasure trove, it is home
+                        to hundreds of endemic species and legends like Gustave the crocodile. Its beaches are the
+                        perfect escape.</p>
+                    <a href="tanganyika.html" class="read-more">The Crystal Waters →</a>
+                </div>
+            </div>
+
+            <!-- Emerald National Parks -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Kibira-Forest-National-Park-1-400x300.jpg" alt="Burundian Forest"
+                        class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>Emerald National Parks</h3>
+                    <p>Explore the lush Kibira Forest or the expansive plains of Ruvubu. Burundi's national parks are
+                        sanctuaries for wildlife, from wild chimpanzees to majestic hippos roaming the riverbanks.</p>
+                    <a href="parks.html" class="read-more">Wild Sanctuaries →</a>
+                </div>
+            </div>
+
+            <!-- The Source of the Nile -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/source du nil.jpg" alt="Source of the Nile Monument" class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>The Source of the Nile</h3>
+                    <p>In the heart of Burundi lies the southernmost source of the world's longest river. The pyramid
+                        at Rutovu marks the beginning of a journey that flows through the history of civilizations.</p>
+                    <a href="nile-source.html" class="read-more">Begin the Journey →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

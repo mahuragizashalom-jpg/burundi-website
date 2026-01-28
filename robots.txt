@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://burundi-showcase.netlify.app/sitemap.xml

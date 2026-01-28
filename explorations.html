@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Trace the footsteps of explorers in Burundi. Visit the Livingstone-Stanley Monument at Mugere, marking the historic meeting of two legendary explorers.">
+    <meta name="keywords"
+        content="Livingstone Stanley Monument, Burundi exploration, Mugere, David Livingstone, Henry Morton Stanley, Source of the Nile, African history">
+    <title>Historic Explorations - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Lake-Tanganyika-2-400x300.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .detail-container {
+            max-width: 900px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+        }
+
+        .detail-content h2 {
+            color: var(--color-text-primary);
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            font-size: 2rem;
+        }
+
+        .detail-footer {
+            text-align: center;
+            margin-top: var(--spacing-3xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--color-border);
+        }
+
+        @media (max-width: 768px) {
+            .detail-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="culture.html" class="nav-link">Culture</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="modern.html" class="nav-link">Modern</a></li>`n                <li><a href="account.html" class="nav-link">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>Historic Explorations</h1>
+            <p class="hero-subtitle">The legendary meeting of explorers that captivated the world.</p>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <a href="index.html" class="back-link">← Back to Overview</a>
+
+        <article class="detail-content">
+            <p>During the 19th century, Central Africa was the final frontier for European explorers. Burundi, with its
+                strategic location along Lake Tanganyika and its proximity to the rumored sources of the Nile, became a
+                focal point of these legendary expeditions.</p>
+
+            <h2>The Quest for the Nile</h2>
+            <p>The source of the Nile was one of the greatest geographical mysteries of the Victorian era. Explorers
+                like David Livingstone spent years trekking through the continent, enduring disease, hostile
+                environments, and isolation to find the headwaters of the world's longest river.</p>
+
+            <h2>Livingstone and Stanley in Burundi</h2>
+            <p>In November 1871, shortly after their famous first meeting in Ujiji (Tanzania), Dr. David Livingstone and
+                the journalist Henry Morton Stanley traveled together to what is now Burundi. They spent several days
+                exploring the northern shores of Lake Tanganyika, hoping to find a river that flowed out of the lake and
+                northward toward the Nile.</p>
+
+            <h2>The Mugere Meeting Point</h2>
+            <p>Located just 12 kilometers south of Bujumbura is the <strong>Livingstone-Stanley Monument</strong> at
+                Mugere. This site marks where the two explorers spent two nights from November 25-27, 1871. A large rock
+                carved with the date commemorates their stay. The explorers described the hospitality of the local
+                Burundians as some of the most welcoming they had experienced in all their travels.</p>
+
+            <h2>Exploratory Legacy</h2>
+            <p>While we now know that Lake Tanganyika is not the source of the Nile, the visit by Livingstone and
+                Stanley placed Burundi on the map of world exploration. Their detailed journals and sketches provided
+                the first written descriptions of the region's breathtaking landscapes and sophisticated society to a
+                global audience.</p>
+        </article>
+
+        <div class="detail-footer">
+            <a href="index.html" class="hero-cta">Explore More of Burundi</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manage your account profile on Burundi Showcase.">
+    <title>Account Profile - Burundi Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="culture.html" class="nav-link">Culture</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="modern.html" class="nav-link">Modern</a></li>
+                <li><a href="account.html" class="nav-link active">Account</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Account Section -->
+    <section class="section account-section">
+        <div class="container-narrow">
+            <div class="profile-card reveal">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <h1 class="profile-name">Mahuragiza Kigeri Noah Shalom</h1>
+                    <p class="profile-tagline">Passionate about Burundian Heritage</p>
+                </div>
+
+                <div class="profile-info">
+                    <div class="info-group">
+                        <label>Email Address</label>
+                        <div class="info-value">
+                            <i class="fas fa-envelope"></i>
+                            <span>loading...</span>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Account Status</label>
+                        <div class="info-value">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Verified Member</span>
+                        </div>
+                    </div>
+
+                    <div class="info-group">
+                        <label>Member Since</label>
+                        <div class="info-value">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>January 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <button class="btn btn-primary" onclick="alert('Profile editing coming soon!')">Edit
+                        Profile</button>
+                    <button class="btn btn-secondary" onclick="logout()">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Footer (Simplified) -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 Burundi Showcase. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

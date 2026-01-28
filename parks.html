@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore the National Parks of Burundi. Trek through the Kibira montane forest or go on a safari in Ruvubu National Park to see hippos and buffaloes.">
+    <meta name="keywords"
+        content="Burundi national parks, Kibira National Park, Ruvubu National Park, Burundi wildlife, chimpanzees in Burundi, African safari, nature conservation">
+    <title>National Parks - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Kibira-Forest-National-Park-1-400x300.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .detail-container {
+            max-width: 900px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .detail-content {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+        }
+
+        .detail-content h2 {
+            color: var(--color-text-primary);
+            margin: var(--spacing-xl) 0 var(--spacing-md);
+            font-size: 2rem;
+        }
+
+        .detail-footer {
+            text-align: center;
+            margin-top: var(--spacing-3xl);
+            padding-top: var(--spacing-xl);
+            border-top: 1px solid var(--color-border);
+        }
+
+        @media (max-width: 768px) {
+            .detail-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html#home" class="nav-link">Home</a></li>
+                <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="index.html#history" class="nav-link">History</a></li>
+                <li><a href="index.html#culture-section" class="nav-link">Culture</a></li>
+                <li><a href="index.html#nature" class="nav-link">Nature</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>National Parks</h1>
+            <p class="hero-subtitle">From misty montane forests to vast savannahs, exploring the wild heart of Burundi.
+            </p>
+        </div>
+    </header>
+
+    <main class="detail-container">
+        <a href="index.html" class="back-link">← Back to Overview</a>
+
+        <article class="detail-content">
+            <p>Burundi's natural landscape is a diverse mosaic of ecosystems. To preserve this heritage, the nation has
+                established several national parks that protect rare wildlife and critical water sources for the entire
+                region.</p>
+
+            <h2>Kibira: The Emerald Crown</h2>
+            <p>Located in the northwest, <strong>Kibira National Park</strong> is a high-altitude montane rainforest
+                that sits atop the Congo-Nile Divide. Covering 400 square kilometers, it is the continuation of Rwanda's
+                Nyungwe Forest. Kibira is a misty, emerald world home to over 640 plant species and 98 species of
+                mammals.</p>
+            <p>The park's most famous residents are its <strong>wild chimpanzees</strong>. While their population has
+                faced challenges, they remain a symbol of the park's wild core. Visitors can also spot black-and-white
+                colobus monkeys, blue monkeys, and over 200 species of birds, making it a paradise for birdwatchers.</p>
+
+            <h2>Ruvubu: The Savannah Giant</h2>
+            <p>In contrast to the dense forests of Kibira is <strong>Ruvubu National Park</strong>, Burundi's largest
+                protected area. Stretching across 500 square kilometers in the northeast, the park is named after the
+                Ruvubu River that winds through it. Here, the landscape opens up into vast savannahs, riverine forests,
+                and wetlands.</p>
+            <p>Ruvubu is home to large mammals that are found nowhere else in Burundi today. Lucky visitors can see
+                <strong>hippopotamuses</strong> wallowing in the river, herds of <strong>cape buffalo</strong> grazing
+                in the grasslands, and various species of antelope like waterbucks and bushbucks. Over 400 species of
+                birds have been recorded here, including the rare Shoebill stork.
+            </p>
+
+            <h2>Conservation Challenges and Hope</h2>
+            <p>Both parks are vital not just for wildlife, but for the Burundian people. Kibira regulates the climate
+                and provides water for the country's hydropower plants and tea plantations. While poaching and habitat
+                loss remain threats, ongoing conservation efforts and the growing interest in eco-tourism are providing
+                new hope for the preservation of these emerald treasures.</p>
+        </article>
+
+        <div class="detail-footer">
+            <a href="index.html" class="hero-cta">Explore More of Burundi</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

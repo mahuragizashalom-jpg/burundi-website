@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Explore Burundi's rich history, from the ancient Ganwa monarchy and the sacred drummers to the courageous struggle for independence led by Prince Louis Rwagasore.">
+    <meta name="keywords"
+        content="Burundi history, Kingdom of Burundi, Prince Louis Rwagasore, Ganwa monarchy, Burundi independence, East African history">
+    <title>History & Heritage - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Prince Louis Rwagasore.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .category-container {
+            max-width: 1200px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .category-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .category-intro h2 {
+            font-size: 2.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .feature-grid {
+            display: grid;
+            gap: var(--spacing-2xl);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .category-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link active">History</a></li>
+                <li><a href="culture.html" class="nav-link">Culture</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="modern.html" class="nav-link">Modern</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>History & Heritage</h1>
+            <p class="hero-subtitle">Exploring the rich tapestry of Burundi's past across centuries of resilience.</p>
+        </div>
+    </header>
+
+    <main class="category-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="category-intro">
+            <h2>The Heart of Africa's Past</h2>
+            <p>From one of Africa's oldest and most powerful monarchies to the courageous struggle for independence,
+                Burundi's history is a story of pride, unity, and the enduring spirit of its people.</p>
+        </div>
+
+        <div class="feature-grid">
+            <!-- The Royal Monarchy -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/drummers-culture.png" alt="Burundian Royal Heritage" class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>The Royal Kingdom</h3>
+                    <p>Founded in the 15th century, the ganwa monarchy successfully resisted multiple invasions,
+                        maintaining a highly organized state. Explore the legacy of the Mwami kings and the 15th-century
+                        foundations of the nation.</p>
+                    <a href="monarchy.html" class="read-more">Learn About the Kings →</a>
+                </div>
+            </div>
+
+            <!-- Path to Independence -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Prince Louis Rwagasore.webp" alt="Prince Louis Rwagasore" class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>The Path to Independence</h3>
+                    <p>On July 1, 1962, Burundi emerged as a sovereign nation. Led by the visionary Prince Louis
+                        Rwagasore, the struggle for freedom was built on the principles of absolute national unity and
+                        economic empowerment.</p>
+                    <a href="independence.html" class="read-more">The Hero's Journey →</a>
+                </div>
+            </div>
+
+            <!-- Historic Explorations -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Lake-Tanganyika-2-400x300.jpg" alt="Livingstone Stanley Meeting"
+                        class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>Historic Explorations</h3>
+                    <p>Burundi was a key site in the global search for the source of the Nile. Discover the meeting
+                        point of Livingstone and Stanley at Mugere and the role of Burundi in the history of African
+                        exploration.</p>
+                    <a href="explorations.html" class="read-more">Relive the Adventure →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="See the modern face of Burundi. Explore the bustling city of Bujumbura, the political capital Gitega, and the nation's digital transformation and youth empowerment initiatives.">
+    <meta name="keywords"
+        content="Modern Burundi, Bujumbura city, Gitega, Burundi economy, digital transformation, youth in Burundi, East African development">
+    <title>Modern Burundi - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/Bujumbura-City-JimJam-Safaris-400x300.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .category-container {
+            max-width: 1200px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .category-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .category-intro h2 {
+            font-size: 2.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .feature-grid {
+            display: grid;
+            gap: var(--spacing-2xl);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .category-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="culture.html" class="nav-link">Culture</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="modern.html" class="nav-link active">Modern</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>Modern Burundi</h1>
+            <p class="hero-subtitle">The "Heart of Africa" beats with new energy, bridging tradition and contemporary
+                progress.</p>
+        </div>
+    </header>
+
+    <main class="category-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="category-intro">
+            <h2>The Pulse of Tomorrow</h2>
+            <p>From the bustling streets of Bujumbura to the digital revolution taking place in our remote hills,
+                Modern Burundi is a nation on the move. Discover how we are building a bright, connected future.</p>
+        </div>
+
+        <div class="feature-grid">
+            <!-- Modern Cities -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Bujumbura-City-JimJam-Safaris-400x300.png" alt="Modern Bujumbura Skyline"
+                        class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>Modern Cities</h3>
+                    <p>Bujumbura, our largest city, and Gitega, our political capital, are centers of growth. Experience
+                        the blend of colonial architecture and modern developments in the heart of East Africa.</p>
+                    <a href="modern-cities.html" class="read-more">City Progress →</a>
+                </div>
+            </div>
+
+            <!-- The Digital Leap -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/learning-together.jpg" alt="Technology in Burundi" class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>The Digital Leap</h3>
+                    <p>Innovation is at the core of our transformation. See how mobile technology, fiber optics, and
+                        dedicated youth centers are bridging the digital divide across the nation.</p>
+                    <a href="digital-leap.html" class="read-more">Digital Growth →</a>
+                </div>
+            </div>
+
+            <!-- Youth & Sports Excellence -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/bustling-market.jpg" alt="Youth activities in Burundi" class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>Youth & Sports Excellence</h3>
+                    <p>Our greatest asset is our youth. Whether on the basketball court, in the classroom, or on the
+                        global stage, Burundian youth are excelling and shaping the future of our republic.</p>
+                    <a href="youth-sports.html" class="read-more">Future Leaders →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

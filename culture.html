@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Immerse yourself in Burundi's vibrant culture. Discover the UNESCO-recognized Royal Drummers of Gitega, traditional intore dancers, and the artistic heritage of the heart of Africa.">
+    <meta name="keywords"
+        content="Burundi culture, Royal Drummers of Burundi, Gishora Drum Sanctuary, Kirundi, Burundian traditions, East African culture">
+    <title>Cultural Heartland - Discover Burundi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .detail-hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/drummers-culture.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: var(--spacing-lg);
+        }
+
+        .category-container {
+            max-width: 1200px;
+            margin: -100px auto var(--spacing-3xl);
+            background: var(--color-bg-primary);
+            padding: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .category-intro {
+            text-align: center;
+            margin-bottom: var(--spacing-3xl);
+        }
+
+        .category-intro h2 {
+            font-size: 2.5rem;
+            color: var(--color-text-primary);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .feature-grid {
+            display: grid;
+            gap: var(--spacing-2xl);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: var(--spacing-lg);
+            transition: var(--transition-fast);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .category-container {
+                margin-top: -50px;
+                padding: var(--spacing-xl) var(--spacing-md);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><img src="images/unite travail progres.png" alt="Burundi Logo" class="header-logo">
+                <div class="logo-wrapper">
+                    <span class="logo-text">BI Burundi</span>
+                    <span class="logo-name">Mahuragiza Kigeri Noah Shalom</span>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="history.html" class="nav-link">History</a></li>
+                <li><a href="culture.html" class="nav-link active">Culture</a></li>
+                <li><a href="nature.html" class="nav-link">Nature</a></li>
+                <li><a href="modern.html" class="nav-link">Modern</a></li>
+                <li><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="hero-content">
+            <h1>Cultural Heartland</h1>
+            <p class="hero-subtitle">Celebrating the rhythmic pulse and artistic soul of the Burundian people.</p>
+        </div>
+    </header>
+
+    <main class="category-container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <div class="category-intro">
+            <h2>The Soul of a Nation</h2>
+            <p>Burundi's culture is a vibrant mosaic of music, dance, and tradition. It is a culture that speaks of
+                unity, heritage, and the shared identity of the "Thousand Hills."</p>
+        </div>
+
+        <div class="feature-grid">
+            <!-- The Sacred Royal Drummers -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Gishora-Drum-Sanctuary-400x300.jpg" alt="Traditional Burundian Drumming"
+                        class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>The Sacred Royal Drummers</h3>
+                    <p>The Royal Drummers of Burundi are a world-renowned cultural icon. Their powerful, rhythmic
+                        performances with hand-carved Ingoma drums were once reserved for royal rituals and are now
+                        celebrated globally.</p>
+                    <a href="drummers.html" class="read-more">Feel the Pulse →</a>
+                </div>
+            </div>
+
+            <!-- Vibrant Traditions -->
+            <div class="feature-row">
+                <div class="feature-image-wrapper">
+                    <img src="images/Places-To-Visit-In-Burundi-400x300.jpg" alt="Burundian Cultural Celebration"
+                        class="feature-image">
+                </div>
+                <div class="feature-content">
+                    <h3>Vibrant Traditions</h3>
+                    <p>Beyond the drums, Burundi's musical heritage is rich with stringed instruments like the Inanga
+                        and the Umuduri. Kirundi, our common language, unites the Hutu, Tutsi, and Twa people in a
+                        shared story.</p>
+                    <a href="traditions.html" class="read-more">Our Shared Stories →</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Created with passion by <strong>Mahuragiza Kigeri Noah Shalom</strong></p>
+            <p class="footer-text">Made with <span class="footer-heart">♥</span> to celebrate the beauty of Burundi</p>
+            <p class="footer-text">© 2026 Discover Burundi. Showcasing the heart of Africa.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
